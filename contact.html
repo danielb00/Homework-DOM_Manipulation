@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Acme'>
+<script src="main.js"></script>
+<title>Contact Us</title>
+    
+</head>
+
+<body>
+
+    <article id="container_contact">
+    <h1>Contact us</h1>
+
+    <form method="POST" action="#" onsubmit="return validateInput()">
+        <img src="images/contact.jpg" alt="Contact"> 
+        <div class="contact">
+            <label>First name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Your name.." autocomplete="on">
+        </div>
+
+        <div class="contact">
+            <label>Last name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Your last name.." autocomplete="on">
+        </div>
+
+        <div class="contact">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Your message here..." cols="30" rows="10"></textarea>
+        </div>
+        
+        <div class="contact">
+            <label>Gender</label>
+            <input id="male" type="radio" name="gender" value="male">Male
+            <input id="female" type="radio" name="gender" value="female">Female
+        </div>
+
+        <input class="button" type="submit" name="submit" value="Submit" />
+
+    </form>
+    </article>
+</body>
+</html> 
